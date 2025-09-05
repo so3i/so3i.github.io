@@ -62,6 +62,7 @@ MyLink-Kit은 이 프로젝트의 이름이며, 모든 파일은 지금 보고 �
 ---
 
 만약 이 프로젝트가 마음에 드셨다면 아래 버튼을 눌러 후원해주세요. 감사합니다!
+
 [![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png)](https://www.buymeacoffee.com/so3i)
 
 
@@ -102,4 +103,5 @@ MyLink-Kit is the name of this project, and all its files are contained within t
 ---
 
 If you found this project helpful, please consider supporting me by clicking the button below. Thank you!
+
 [![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png)](https://www.buymeacoffee.com/so3i)
