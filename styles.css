@@ -48,10 +48,6 @@ button, input, textarea {
 body, html {
     height: 100dvh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden; 
 }
 body { 
     font-family: var(--main-font);
@@ -221,3 +217,4 @@ ul, li {
     color: #8C7EAF;
 
 }
+
