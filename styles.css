@@ -1,0 +1,213 @@
+/*
+ * =============================================================================
+ * Project  : MyLink-Kit (A so3i_plays project)
+ * Author   : so3i
+ * Homepage : https://so3i.github.io
+ * License  : MIT
+ * Version  : 1.0.0 (2025.09)
+ * =============================================================================
+ * 저를 존중한다면 이 저작자 표시 주석 부분을 지우지 말아주세요.
+ * 이 프로젝트는 비개발자를 위하여 만들어졌습니다.
+ * If you respect my work, please do not delete this author attribution comment.
+ * This project was created for non-developers.
+ * 
+ * =============================================================================
+ * 수정 방법 / How to Customize
+ * =============================================================================
+ * 페이지를 커스텀하기 좋게 필요한 부분마다 주석 처리를 해놨습니다.
+ * CSS 문법을 잘 모르신다면 주석으로 지정한 위치만 수정하세요.
+ * This page has comments at various points to facilitate customization.
+ * If you are unfamiliar with CSS syntax, 
+ * please only modify the locations specified in comments.
+ * =============================================================================
+*/
+
+
+* {
+    margin : 0;
+    padding : 0;
+}
+
+img {
+    border : 0;
+}
+
+a {
+    text-decoration : none;
+    color : inherit;
+}
+
+button, input, textarea {
+    font-family : inherit;
+    font-size : inherit;
+    outline : none;
+    border : none;
+    background : none;
+}
+
+body { 
+    font-family: var(--main-font);
+    font-optical-sizing: auto;
+}
+
+/*
+https://fonts.google.com/
+*/
+
+h1, h2, h3, h4, h5 {
+    margin : 0;
+    padding : 0;
+    line-height: 1.5;
+}
+
+ul, li {
+    list-style:none;
+}
+
+.wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #DBE1EE, #FFF8FA);
+}
+
+.content {
+    width:90vw;
+    max-width:400px;
+    text-align:center;
+    border-radius: 50% 50% 2em 2em / 28% 28% 2em 2em;
+    background: rgba(255, 255, 255, 0.8);
+    padding: clamp(40px, 3vw, 50px) clamp(30px, 2vw, 30px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .content { 
+        max-width: none;
+    }
+}
+
+.infoArea {
+}
+
+.thumbBox {
+    margin: 0 auto max(5px, 1vh);
+}
+
+.thumbBox img {
+    width : 25vw;
+    max-width : 150px;
+    border-radius : 50%;
+    object-fit: cover;
+    margin : 0 auto;
+    display:block;
+    border:5px #8C7EAF solid;
+}
+
+.userName {
+    font-size: clamp(18px, 4vw, 24px);
+    font-family: var(--point-font);
+    font-weight : 500;
+    color : #333;
+}
+
+.pageSubtitle {
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight : 200;
+    color : #8C7EAF;
+}
+
+.sloganText {
+    font-size: clamp(14px, 2.5vw, 16px);
+    margin:clamp(8px, 2vh, 16px) clamp(14px, 3vh, 21px) ;
+    padding: clamp(10px, 2vw, 30px) 0;
+    font-weight : 00;
+    color : #555;
+    border-top: 1px #cecece solid;
+}
+
+/* 그리드 스타일 */
+
+.linkArea ul {
+    border-radius: 2em;
+    border:1px #cecece solid;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow:hidden;
+}
+
+.linkArea ul li {
+    border-bottom:1px #cecece solid;
+    border-right : 1px #cecece solid;
+    padding: 1em 1em;
+}
+.linkArea ul li:nth-child(2n) {
+    border-right: 0;
+}
+.linkArea ul li:nth-last-child(-n+2) {
+    border-bottom: 0;
+}
+.linkArea ul li a {
+    display:block;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-10px); } 
+  50%  { transform: translateY(0); }     
+  70%  { transform: translateY(-5px); }  
+  100% { transform: translateY(0); }    
+}
+
+.linkArea ul li a i {
+    display: block;
+    transition: transform 0.2s ease;
+    margin:auto;
+    color:#333;
+}
+.linkArea ul li a:hover,
+.linkArea ul li a:active {
+    color: #8C7EAF;
+}
+.linkArea ul li a:hover i,
+.linkArea ul li a:active i {
+    animation: bounce 0.5s ease;
+    color: #8C7EAF;
+}
+
+/* 일반 목록 버전 */ 
+
+.linkArea_normalList ul {
+    border-radius: 2em;
+    border:1px #cecece solid;
+}
+
+.linkArea_normalList ul li {
+    border-bottom:1px #cecece solid;
+    padding: 0.5em 1em;
+}
+.linkArea_normalList ul li:last-child {
+    border-bottom:0;
+}
+.linkArea_normalList ul li a {
+    display:block;
+}
+
+.linkArea_normalList ul li a i {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    margin-right: 10px;
+    color:#333;
+}
+.linkArea_normalList ul li a:hover,
+.linkArea_normalList ul li a:active {
+    color: #8C7EAF;
+}
+.linkArea_normalList ul li a:hover i,
+.linkArea_normalList ul li a:active i {
+    animation: bounce 0.5s ease;
+    color: #8C7EAF;
+}
